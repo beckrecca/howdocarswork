@@ -16,6 +16,9 @@ a:hover {
 }
 footer {
 	font-size: .8em;
+	border-top: 1px dotted #445878;
+	padding-top: 1em;
+	margin-top: 1em;
 }
 h1, h1>a, h1>a:hover, h1>a:active, h1>a:visited, h2, h3, h4 {
 	 color: #EEEFF7;
