@@ -1,0 +1,27 @@
+body {
+	background-color: #000;
+	color: #fff;
+}
+button {
+	margin: 0.5em;
+}
+input {
+	margin: 0.25em;
+}
+a {
+	color: #92CDCF;
+}
+a:hover {
+	color: #31353D;
+}
+footer {
+	font-size: .8em;
+}
+h1, h1>a, h1>a:hover, h1>a:active, h1>a:visited, h2, h3, h4 {
+	 color: #EEEFF7;
+	 text-decoration: none;
+}
+.nav-tabs {
+	border-bottom: 1px dotted #445878;
+}
+ul.nav a:hover { background-color: #EEEFF7; }
