@@ -28,3 +28,6 @@ h1, h1>a, h1>a:hover, h1>a:active, h1>a:visited, h2, h3, h4 {
 	border-bottom: 1px dotted #445878;
 }
 ul.nav a:hover { background-color: #EEEFF7; }
+.moot {
+	color: #fff;
+}
