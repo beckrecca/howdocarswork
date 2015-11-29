@@ -6,6 +6,8 @@
 
     // Navigation
     $(".nav-link").click(function () {
+        // show the link is chosen in the menu
+        $(this).attr("class", "open-section");
         // get the id of the nav item clicked
         var linkId = $(this).attr('id');
         // generated the id of the relevant content div
