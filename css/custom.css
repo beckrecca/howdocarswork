@@ -31,3 +31,10 @@ ul.nav a:hover { background-color: #EEEFF7; }
 .moot {
 	color: #fff;
 }
+ul#essential-questions {
+	font-size: 1.1em;
+	color: #EEEFF7;
+}
+.img {
+	margin: 1.5em;
+}
