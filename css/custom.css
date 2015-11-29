@@ -14,6 +14,7 @@ a {
 }
 a:hover {
 	color: #31353D;
+	text-decoration: none;
 }
 footer {
 	font-size: .8em;
@@ -25,12 +26,6 @@ h1, h1>a, h1>a:hover, h1>a:active, h1>a:visited, h2, h3, h4 {
 	 color: #EEEFF7;
 	 text-decoration: none;
 }
-.message {
-	color: #92CDCF;
-}
-.nav-tabs {
-	border-bottom: 1px dotted #445878;
-}
 textarea {
 	color: #000;
 }
@@ -40,8 +35,32 @@ ul.nav a:hover { background-color: #EEEFF7; }
 }
 ul#essential-questions {
 	font-size: 1.1em;
-	color: #EEEFF7;
+	color: #92CDCF;
+	list-style-type: none;
+}
+.article-link {
+	font-size: 1.2em;
+}
+.bigidea {
+	color: #92CDCF;
+}
+.btn-primary, .btn-primary:active {
+	background-color: #445878;
+	border-color: #EEEFF7;
+}
+.btn-primary:hover {
+	background-color: #92CDCF;
+	border-color: #EEEFF7;
+}
+.footnote {
+	font-size: 0.85em;
 }
 .img {
 	margin: 1.5em;
+}
+.message {
+	color: #92CDCF;
+}
+.nav-tabs {
+	border-bottom: 1px dotted #445878;
 }

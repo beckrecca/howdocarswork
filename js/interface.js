@@ -18,6 +18,20 @@
         $("#" + id).attr("class", "visible");
     });
 
+    // In-article navigation
+    $(".article-link").click(function () {
+        // get the id of the nav item clicked
+        var linkId = $(this).attr('id');
+        // generate the id of the relevant content div
+        var id = linkId + "iv";
+
+        // hide all of the visible content divs
+        $(".visible").attr("class", "hidden");
+
+        // display the selected item's content
+        $("#" + id).attr("class", "visible");
+    });
+
     // Open-Ended Questions
     $("button").click(function () {
         // get the id of the button clicked
@@ -36,19 +50,19 @@
             console.log(buttonId);
             // if it's the fuelandair section
             if (buttonId == "fuelandairQ") {
-                $("#" + spanId).html("Here is the correct answer for the fuel and air section.");
+                $("#" + spanId).html("[correct answer for the fuel and air question]");
             }
             else if (buttonId == "sparkQ") {
-                $("#" + spanId).html("Here is the correct answer for the spark section.");
+                $("#" + spanId).html("[correct answer for the spark question]");
             }
             else if (buttonId == "oilQ") {
-                $("#" + spanId).html("Here is the correct answer for the oil section.");
+                $("#" + spanId).html("[correct answer for the oil question]");
             }
             else if (buttonId == "coolingQ") {
-                $("#" + spanId).html("Here is the correct answer for the cooling section.");
+                $("#" + spanId).html("[correct answer for the cooling question]");
             }
             else if (buttonId == "exhaustQ") {
-                $("#" + spanId).html("Here is the correct answer for the exhaust section.");
+                $("#" + spanId).html("[correct answer for the exhaust question]");
             }
         }
     });

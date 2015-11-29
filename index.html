@@ -19,6 +19,7 @@
   <body>
   	<div class="container">
   		<header class="row">
+        <a name="top"></a>
   			<h1><a href="#" id="refresh">How do cars work?</a></h1>
   		</header>
 
@@ -29,7 +30,8 @@
           <li><a href="#" id="oil" class="nav-link">Oil</a></li>
   				<li><a href="#" id="cooling" class="nav-link">Cooling</a></li>
   				<li><a href="#" id="exhaust" class="nav-link">Exhaust</a></li>
-  				<li><a href="#" id="review" class="nav-link">Step Inside</a></li>
+  				<li><a href="#" id="review" class="nav-link">Review</a></li>
+          <li><a href="#" id="stepinside" class="nav-link">Step Inside</a></li>
   				<li><a href="#" id="quiz" class="nav-link">Quiz</a></li>
   			</ul>
   		</nav>
@@ -51,7 +53,7 @@
             <li>Is there anything important that I'm completely ignoring?</li>
           </ul>
 
-          <p>Select the links from above to learn about each engine system!</p>
+          <p>Let's get started with <a href="#top" class="article-link" id="fuelandairD">Fuel and Air</a>!</p>
   			</div>
   		</div>
 
@@ -60,14 +62,25 @@
         <div class="row">
           <div class="col-sm-6">
             <h2>Fuel and Air</h2>
-            <p> So, how does the gasoline engine work? Before we start naming parts, we should understand that just like us, our cars need fuel and air in order to generate the energy to move around, too.</p>
+            <p> So, how does the gasoline engine work? Before we start naming parts, we should understand that just like us, <span class="bigidea">cars need fuel and air</span> in order to generate the energy to move around, too.</p>
 
-            <p>Please note that although this (very old) video describes the function of the carburetor, modern vehicles tend to use fuel injection systems. If you are curious about the difference, <a href="http://www.carsdirect.com/used-car-buying/carburetor-vs-fuel-injection-understanding-the-pros-and-cons" target="_blank">check out this article</a>. 
+            <p>So, let's <em>dive in</em>! Check out the video* titled "How the gasoline engine works." </p>
+
+            <p>After you've finished, read <a href="http://www.hoentaylor.com/blog/?tag=how-an-internal-combustion-engine-works" target="_blank">this excellent blog post</a> which describes how the internal combustion engine works using things you already understand. In the post, Hoen Taylor describes the basic parts of the engine in terms of a tricycle wheel, a spray bottle, a syringe, and a bathroom sink. These simple elements can be used to describe the <span class="bigidea">four stroke cycle</span> of the internal combustion engine.</p>
           </div>
 
           <div class="col-sm-6">
+            <h4>Video: How the Gasoline Engine Works</h4>
             <iframe width="420" height="315" src="https://www.youtube.com/embed/uvAxeA7AS-A" frameborder="0" allowfullscreen></iframe>
+            <p class="footnote">
+              *(Please note that although this very old video explains the function of the carburetor, modern vehicles tend to use fuel injection systems. If you are curious about the difference, <a href="http://www.carsdirect.com/used-car-buying/carburetor-vs-fuel-injection-understanding-the-pros-and-cons" target="_blank">check out this article</a>. However, don't worry about this for the purposes of this lesson!)
+            </p>
           </div>
+        </div>
+        <div class="row">
+          <p>We can put this all together with <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> of the <span class="bigidea">four stroke cycle</span>.
+              <img src="img/engine-01.gif" alt="an animated illustration of a cylinder of a car engine cycling through its four strokes" class="img img-responsive">
+          </p>
         </div>
         <div class="row">
           <h3>Think About It</h3>
@@ -75,67 +88,97 @@
           <br><textarea id="fuelandairQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="fuelandairQA"></span>
           <br><button class="btn btn-primary" id="fuelandairQ">Submit</button>
+          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="sparkD">Spark</a>!</p>
         </div>
       </div>
 
   		<!-- SPARK -->
   		<div id="sparkDiv" class="hidden">
         <div class="row">
-    			<h2>Spark</h2>
-
+          <div class="col-sm-6">
+      			<h2>Spark</h2>
+            <p>But how does the engine get going in the first place?</p>
+            <p>
+              In the Fuel and Air section, you read a little bit about the spark plug and electric starter motor on <a href="http://www.hoentaylor.com/blog/?tag=how-an-internal-combustion-engine-works">Taylor Hoen's blog</a>. This part of the lesson showed how gasoline burns best when mixed thoroughly with air. However, it needs a spark of electricity to do it! Watch the video, "Starting a Car - Explained," to understand just how that spark happens when you start your car.
+            </p>
+            <p>
+              For fun, check out a much faster explanation in this rap video <a href="https://www.youtube.com/watch?v=4n3RTI1le3I" target="_blank">here</a>!
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h4>Video: Starting a Car - Explained</h4>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/sn4yszblY4s" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <p>Although the <span class="bigidea">battery</span> gets the car started and runs other systems when the engine isn't running (like your radio), the <span class="bigidea">alternator</span> provides electricity while the engine is running. Read <a href="http://autorepair.about.com/od/glossary/a/howitworks_alternator.htm" target="_blank">this article</a> to learn more about how the alternator and battery work together!</p>
+          <p>Once again, we can check out <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> of the <span class="bigidea">electrical system</span> to see all this in action. <img src="img/electrical.gif" alt="an animation of the electrical system of a car engine" class="img img-responsive">
+            </p>
         </div>
         <div class="row">
           <h3>Think About It</h3>
-          <p>Here goes some question about ignition or electricity?</p>
+          <p>From what you've learned about a car's electrical system, what do you think might be some signs of a faulty alternator?</p>
           <br><textarea id="sparkQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="sparkQA"></span>
           <br><button class="btn btn-primary" id="sparkQ">Submit</button>
+          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="oilD">Oil</a>!</p>
         </div>
   		</div>
 
       <!-- OIL -->
       <div id="oilDiv" class="hidden">
         <div class="row">
-          <h2>Oil</h2>
-
+          <div class="col-sm-6">
+            <h2>Oil</h2>
+            [coming soon]
+          </div>
         </div>
 
         <div class="row">
           <h3>Think About It</h3>
-          <p>Here goes some question about oil?</p>
+          <p>What do you think would happen if you never changed your oil?</p>
           <br><textarea id="oilQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="oilQA"></span>
           <br><button class="btn btn-primary" id="oilQ">Submit</button>
+          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="coolingD">Cooling</a>!</p>
         </div>
       </div>
 
   		<!-- COOLING -->
   		<div id="coolingDiv" class="hidden">
         <div class="row">
-  			 <h2>Cooling</h2>
+          <div class="col-sm-6">
+    			 <h2>Cooling</h2>
+            [coming soon]
+          </div>
         </div>
 
         <div class="row">
           <h3>Think About It</h3>
-          <p>Here goes some question about coolant?</p>
+          <p>What would happen if you used pure water as engine coolant?</p>
           <br><textarea id="coolingQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="coolingQA"></span>
           <br><button class="btn btn-primary" id="coolingQ">Submit</button>
+          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="exhaustD">Exhaust</a>!</p>
         </div>
   		</div>
 
   		<!-- EXHAUST -->
   		<div id="exhaustDiv" class="hidden">
         <div class="row">
-  			 <h2>Exhaust</h2>
+          <div class="col-sm-6">
+    			 <h2>Exhaust</h2>
+            [coming soon]
+          </div>
         </div>
 
         <div class="row">
           <h3>Think About It</h3>
-          <p>Here goes some question about exhaust?</p>
+          <p>Your car runs just fine, but the check engine light came on, and now the mechanic says you need a new catalytic converter. Why is this important to replace?</p>
           <br><textarea id="exhaustQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="exhaustQA"></span>
           <br><button class="btn btn-primary" id="exhaustQ">Submit</button>
+          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="reviewD">Review</a>!</p>
         </div>
   		</div>
 
@@ -143,16 +186,27 @@
   		<div id="reviewDiv" class="hidden">
         <div class="row">
   			 <h2>Review</h2>
-
-         <p>Here is the Step Inside activity.</p>
-         <a class="muut" href="https://muut.com/i/how-cars-work-discussion/comments" type="dynamic">how-cars-work-discussion</a>
-<script src="//cdn.muut.com/1/moot.min.js"></script>
+         [coming soon]
+         <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="stepinsideD">Step Inside</a>!</p>
         </div>
   		</div>
+
+      <!-- STEP INSIDE -->
+      <div id="stepinsideDiv" class="hidden">
+        <div class="row">
+         <h2>Step Inside</h2>
+
+         <p>[Step Inside activity]</p>
+         <a class="muut" href="https://muut.com/i/how-cars-work-discussion/comments" type="dynamic">how-cars-work-discussion</a>
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+        <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="quizD">Quiz</a>!</p>
+        </div>
+      </div>
 
   		<!-- QUIZ -->
   		<div id="quizDiv" class="hidden">
   			<h2>Quiz</h2>
+        <p class="pull-right"><a href="#top">^Top</a> 
   		</div>
   		
   		<footer>
