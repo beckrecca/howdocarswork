@@ -33,7 +33,7 @@
     });
 
     // Open-Ended Questions
-    $("button").click(function () {
+    $(".btn.btn-primary.think").click(function () {
         // get the id of the button clicked
         var buttonId = $(this).attr('id');
         // generate the id of the relevant textarea
@@ -47,7 +47,6 @@
         }
         // otherwise provide the correct answer
         else {
-            console.log(buttonId);
             // if it's the fuelandair section
             if (buttonId == "fuelandairQ") {
                 $("#" + spanId).html("[correct answer for the fuel and air question]");
@@ -69,6 +68,7 @@
 
     // Quiz
     $('#submit').click(function (e) {
+        console.log("submit clicked");
         // correct answers
         var answers = ["a", "b", "c"];
 

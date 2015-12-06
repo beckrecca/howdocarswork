@@ -95,7 +95,7 @@
           <p>Why is gasoline so useful as fuel in the internal combustion engine?</p>
           <br><textarea id="fuelandairQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="fuelandairQA"></span>
-          <br><button class="btn btn-primary" id="fuelandairQ">Submit</button>
+          <br><button class="btn btn-primary think" id="fuelandairQ">Submit</button>
           <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="sparkD">Spark</a>!</p>
         </div>
       </div>
@@ -128,7 +128,7 @@
           <p>From what you've learned about a car's electrical system, what do you think might be some signs of a faulty alternator?</p>
           <br><textarea id="sparkQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="sparkQA"></span>
-          <br><button class="btn btn-primary" id="sparkQ">Submit</button>
+          <br><button class="btn btn-primary think" id="sparkQ">Submit</button>
           <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="oilD">Oil</a>!</p>
         </div>
   		</div>
@@ -152,7 +152,7 @@
           <p>What do you think would happen if you never changed your oil?</p>
           <br><textarea id="oilQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="oilQA"></span>
-          <br><button class="btn btn-primary" id="oilQ">Submit</button>
+          <br><button class="btn btn-primary think" id="oilQ">Submit</button>
           <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="coolingD">Cooling</a>!</p>
         </div>
       </div>
@@ -176,7 +176,7 @@
           <p>What would happen if you used pure water as engine coolant?</p>
           <br><textarea id="coolingQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="coolingQA"></span>
-          <br><button class="btn btn-primary" id="coolingQ">Submit</button>
+          <br><button class="btn btn-primary think" id="coolingQ">Submit</button>
           <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="exhaustD">Exhaust</a>!</p>
         </div>
   		</div>
@@ -200,7 +200,7 @@
           <p>Your car runs just fine, but the check engine light came on, and now the mechanic says you need a new catalytic converter. Why is this important to replace?</p>
           <br><textarea id="exhaustQT" rows="4" cols="20"></textarea> 
           <br><span class="message" id="exhaustQA"></span>
-          <br><button class="btn btn-primary" id="exhaustQ">Submit</button>
+          <br><button class="btn btn-primary think" id="exhaustQ">Submit</button>
           <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="reviewD">Review</a>!</p>
         </div>
   		</div>
@@ -229,6 +229,51 @@
   		<!-- QUIZ -->
   		<div id="quizDiv" class="hidden">
   			<h2>Quiz</h2>
+        <div class="row" id="quiz">
+        <div class="question">
+          <p>
+            <label name="q1">Question 1?</label>
+          </p>
+          <input type="radio" name="q1" value="a" id="q1a"> A
+          <br>
+          <input type="radio" name="q1" value="b" id="q1b"> B
+          <br>
+          <input type="radio" name="q1" value="c" id="q1c" required> C
+          <br>
+          <span class="message" id="m1"></span>
+        </div>
+
+        <div class="question">
+          <p>
+            <label name="q2">Question 2?</label>
+          </p>
+          <input type="radio" name="q2" value="a" id="q2a"> A
+          <br>
+          <input type="radio" name="q2" value="b" id="q2b"> B
+          <br>
+          <input type="radio" name="q2" value="c" id="q2c" required> C
+          <br>
+          <span class="message" id="m2"></span>
+        </div>
+
+        <div class="question">
+          <p>
+            <label name="q3">Question 3?</label>
+          </p>
+          <input type="radio" name="q3" value="a" id="q3a"> A
+          <br>
+          <input type="radio" name="q3" value="b" id="q3b"> B
+          <br>
+          <input type="radio" name="q3" value="c" id="q3c" required> C
+          <br>
+          <span class="message" id="m3"></span>
+        </div>
+
+        <div class="submit">
+          <button id="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
         <p class="pull-right"><a href="#top">^Top</a> 
   		</div>
   		
