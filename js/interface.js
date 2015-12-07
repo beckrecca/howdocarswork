@@ -70,7 +70,7 @@
     $('#submit').click(function (e) {
         console.log("submit clicked");
         // correct answers
-        var answers = ["a", "b", "c"];
+        var answers = ["b", "c", "c", "a", "e", "a", "b"];
 
         for (var i = 1; i <= answers.length; i++) {
             // obtain answer from radio button
