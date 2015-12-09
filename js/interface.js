@@ -71,6 +71,12 @@
         // correct answers
         var answers = ["b", "c", "c", "a", "e", "a", "b", "d", "d", "c", "a", "c", "d", "c", "a"];
 
+        // initiate a count of the valid answers
+        var valid = 0;
+
+        // initiate a count of the correct answers
+        var correct = 0;
+
         for (var i = 1; i <= answers.length; i++) {
             // obtain answer from radio button
             var inputString = "input:radio[name=q" + i + "]:checked";
@@ -85,15 +91,26 @@
             }
             // otherwise assess
             else {
-                // if correct
+                // count a valid answer
+                valid++;
                 if (answers[i-1] == q) {
                     $(m).html("Hooray! Correct");
+                    // count a correct answer
+                    correct++;
                 }
                 // if incorrect
                 else {
+                    $(m).css("color", "#ff0000");
                     $(m).html("False :( The correct answer is " + answers[i-1].toUpperCase());
                 }  
             }
+        }
+
+        // if all the questions were answered
+        if (valid == (answers.length)) {
+            // calculate the number correct
+            var score = correct/valid;
+            $("#score").html("You scored " + ((score * 100).toFixed(2)) + " percent");
         }
     });
 }

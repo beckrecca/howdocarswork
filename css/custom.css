@@ -71,6 +71,10 @@ ul#essential-questions {
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 }
+#score {
+	font-size: 2em;
+	font-weight: bold;
+}
 #stepinside {
 	color: #EEEFF7;
 }
