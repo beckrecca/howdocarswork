@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>How do cars work?</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
     <!-- Custom CSS and JS -->
     <link rel="stylesheet" href="css/custom.css">
@@ -23,516 +24,531 @@
   			<h1><a href="#" id="refresh">How do cars work?</a></h1>
   		</header>
 
-  		<nav class="row">
-  			<ul class="nav nav-tabs">
-          <li><a href="#" id="fuelandair" class="nav-link">Fuel and Air</a></li>
-  				<li><a href="#" id="spark" class="nav-link">Spark</a></li>
-          <li><a href="#" id="oil" class="nav-link">Oil</a></li>
-  				<li><a href="#" id="cooling" class="nav-link">Cooling</a></li>
-  				<li><a href="#" id="exhaust" class="nav-link">Exhaust</a></li>
-  				<li><a href="#" id="review" class="nav-link">Review</a></li>
-          <li><a href="#" id="stepinside" class="nav-link">Step Inside</a></li>
-  				<li><a href="#" id="quiz" class="nav-link">Quiz</a></li>
-  			</ul>
-  		</nav>
-
-  		<!-- WELCOME -->
-  		<div id="welcome" class="visible">
-  			<div class="row">
-          <h2>Welcome</h2>
-          <p> <img src="img/motorist.gif" alt="Animated image of Mr. Burns from the Simpsons driving recklessly, yelling 'Beep beep get out of my way, I'm a motorist!'" class="img img-responsive pull-left">
-            Do you know only slightly more about cars than Mr. Burns here? 
-  					If you've ever looked <a href="http://howtomatthew.blogspot.com/2009/05/under-hood-2001-ford-taurus-30l.html" target="_blank">under the hood of a car</a>, it's a lot of caps and reservoirs for various fluids and electrical stuff. However, there are not many clues as to what actually makes the car go <em>vroom vroom</em>. You might wonder...
-          </p>
-  				<ul id="essential-questions">
-            <li>What's going on that actually gives the vehicle the power to move?</li>
-  					<li>Why have cars run on gasoline for so long?</li>
-            <li>How does the engine start? What keeps it going?</li>
-            <li>Why do I have to change my oil? What does it do?</li>
-  					<li>How do I keep my car from overheating?</li>
-            <li>Is there anything important that I'm completely ignoring?</li>
-          </ul>
-
-          <!-- NOTES FROM CLASS
-              what kind of questions?
-              practical or just interesting?
-              what kind of hooks am I casting?
-              Do these questions "go together"?
-              Create a question concept map.
-            --> 
-
-          <p>Let's get started with <a href="#top" class="article-link" id="fuelandairD">Fuel and Air</a>!</p>
-  			</div>
-  		</div>
-
-      <!-- FUEL AND AIR -->
-      <div id="fuelandairDiv" class="hidden">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Fuel and Air</h2>
-            <p> So, how does the gasoline engine work? Before we start naming parts, we should understand that just like us, <span class="bigidea">cars need fuel and air</span> in order to generate the energy to move around, too.</p>
-
-            <p>So, let's <em>dive in</em>! Check out the video* titled "How the gasoline engine works." </p>
-
-            <p>After you've finished, read <a href="http://www.hoentaylor.com/blog/?tag=how-an-internal-combustion-engine-works" target="_blank">this excellent blog post</a> which describes how the internal combustion engine works using things you already understand. In the post, Hoen Taylor describes the basic parts of the engine in terms of a tricycle wheel, a spray bottle, a syringe, and a bathroom sink. These simple elements can be used to describe the <span class="bigidea">four stroke cycle</span> of the internal combustion engine.</p>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
           </div>
 
-          <div class="col-sm-6">
-            <h4>Video: How the Gasoline Engine Works</h4>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/uvAxeA7AS-A" frameborder="0" allowfullscreen></iframe>
-            <p class="footnote">
-              *(Please note that although this very old video explains the function of the carburetor, modern vehicles tend to use fuel injection systems. If you are curious about the difference, <a href="http://www.carsdirect.com/used-car-buying/carburetor-vs-fuel-injection-understanding-the-pros-and-cons" target="_blank">check out this article</a>. However, don't worry about this for the purposes of this lesson!)
-            </p>
-          </div>
+      		<div class="collapse navbar-collapse" id="navbar">
+      			<ul class="nav navbar-nav">
+              <li><a href="#" id="fuelandair" class="nav-link">Fuel and Air</a></li>
+      				<li><a href="#" id="spark" class="nav-link">Spark</a></li>
+              <li><a href="#" id="oil" class="nav-link">Oil</a></li>
+      				<li><a href="#" id="cooling" class="nav-link">Cooling</a></li>
+      				<li><a href="#" id="exhaust" class="nav-link">Exhaust</a></li>
+      				<li><a href="#" id="review" class="nav-link">Review</a></li>
+              <li><a href="#" id="stepinside" class="nav-link">Step Inside</a></li>
+      				<li><a href="#" id="quiz" class="nav-link">Quiz</a></li>
+      			</ul>
+      		</div>
         </div>
-        <div class="row">
-          <p>We can put this all together with <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> of the <span class="bigidea">four stroke cycle</span>.
-              <img src="img/engine-01.gif" alt="an animated illustration of a cylinder of a car engine cycling through its four strokes" class="img img-responsive">
-          </p>
-        </div>
-        <div class="row">
-          <h3>Think About It</h3>
-          <p>Why is gasoline so useful as fuel in the internal combustion engine?</p>
-          <br><textarea id="fuelandairQT" rows="4" cols="20"></textarea> 
-          <br><span class="message" id="fuelandairQA"></span>
-          <br><button class="btn btn-primary think" id="fuelandairQ">Submit</button>
-          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="sparkD">Spark</a>!</p>
-        </div>
-      </div>
+      </nav>
 
-  		<!-- SPARK -->
-  		<div id="sparkDiv" class="hidden">
-        <div class="row">
-          <div class="col-sm-6">
-      			<h2>Spark</h2>
-            <p>But how does the engine get going in the first place?</p>
-            <p>
-              In the Fuel and Air section, you read a little bit about the spark plug and electric starter motor on <a href="http://www.hoentaylor.com/blog/?tag=how-an-internal-combustion-engine-works">Taylor Hoen's blog</a>. This part of the lesson showed how gasoline burns best when mixed thoroughly with air. However, it needs a spark of electricity to do it! Watch the video, "Starting a Car - Explained," to understand just how that spark happens when you start your car.
+      <div class="container">
+    		<!-- WELCOME -->
+    		<div id="welcome" class="visible">
+    			<div class="row">
+            <h2>Welcome</h2>
+            <p> <img src="img/motorist.gif" alt="Animated image of Mr. Burns from the Simpsons driving recklessly, yelling 'Beep beep get out of my way, I'm a motorist!'" class="img img-responsive pull-left">
+              Do you know only slightly more about cars than Mr. Burns here? 
+    					If you've ever looked <a href="http://howtomatthew.blogspot.com/2009/05/under-hood-2001-ford-taurus-30l.html" target="_blank">under the hood of a car</a>, it's a lot of caps and reservoirs for various fluids and electrical stuff. However, there are not many clues as to what actually makes the car go <em>vroom vroom</em>. You might wonder...
             </p>
-            <p>
-              For fun, check out a much faster explanation in this rap video <a href="https://www.youtube.com/watch?v=4n3RTI1le3I" target="_blank">here</a>!
-            </p>
-          </div>
-          <div class="col-sm-6">
-            <h4>Video: Starting a Car - Explained</h4>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/sn4yszblY4s" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row">
-          <p>Although the <span class="bigidea">battery</span> gets the car started and runs other systems when the engine isn't running (like your radio), the <span class="bigidea">alternator</span> provides electricity while the engine is running. Read <a href="http://autorepair.about.com/od/glossary/a/howitworks_alternator.htm" target="_blank">this article</a> to learn more about how the alternator and battery work together!</p>
-          <p>Once again, we can check out <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> of the <span class="bigidea">electrical system</span> to see all this in action. <img src="img/electrical.gif" alt="an animation of the electrical system of a car engine" class="img img-responsive">
-            </p>
-        </div>
-        <div class="row">
-          <h3>Think About It</h3>
-          <p>From what you've learned about a car's electrical system, what do you think might be some signs of a faulty alternator?</p>
-          <br><textarea id="sparkQT" rows="4" cols="20"></textarea> 
-          <br><span class="message" id="sparkQA"></span>
-          <br><button class="btn btn-primary think" id="sparkQ">Submit</button>
-          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="oilD">Oil</a>!</p>
-        </div>
-  		</div>
+    				<ul id="essential-questions">
+              <li>What's going on that actually gives the vehicle the power to move?</li>
+    					<li>Why have cars run on gasoline for so long?</li>
+              <li>How does the engine start? What keeps it going?</li>
+              <li>Why do I have to change my oil? What does it do?</li>
+    					<li>How do I keep my car from overheating?</li>
+              <li>Is there anything important that I'm completely ignoring?</li>
+            </ul>
 
-      <!-- OIL -->
-      <div id="oilDiv" class="hidden">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Oil</h2>
-            <p>
-              If you've ever owned a car, you've had to get an oil change. Some mechanics are courteous enough to leave a sticker on your dashboard to remind you approximately when or at what mileage you should come back to change your oil. Why?
-            </p>
-            <p>
-              Well, did you know that each of the joints in the human body contains a <a href="http://www.healthline.com/health/synovial-fluid-analysis" target="_blank">lubricating fluid</a>? This allows for ease of movement of the body. Engine oil serves a similar purpose.
-            </p>
-            <p>
-              Watch the video "How does car engine oil work?" to learn about what the oil does in the engine.
+            <!-- NOTES FROM CLASS
+                what kind of questions?
+                practical or just interesting?
+                what kind of hooks am I casting?
+                Do these questions "go together"?
+                Create a question concept map.
+              --> 
+
+            <p>Let's get started with <a href="#top" class="article-link" id="fuelandairD">Fuel and Air</a>!</p>
+    			</div>
+    		</div>
+
+        <!-- FUEL AND AIR -->
+        <div id="fuelandairDiv" class="hidden">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Fuel and Air</h2>
+              <p> So, how does the gasoline engine work? Before we start naming parts, we should understand that just like us, <span class="bigidea">cars need fuel and air</span> in order to generate the energy to move around, too.</p>
+
+              <p>So, let's <em>dive in</em>! Check out the video* titled "How the gasoline engine works." </p>
+
+              <p>After you've finished, read <a href="http://www.hoentaylor.com/blog/?tag=how-an-internal-combustion-engine-works" target="_blank">this excellent blog post</a> which describes how the internal combustion engine works using things you already understand. In the post, Hoen Taylor describes the basic parts of the engine in terms of a tricycle wheel, a spray bottle, a syringe, and a bathroom sink. These simple elements can be used to describe the <span class="bigidea">four stroke cycle</span> of the internal combustion engine.</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h4>Video: How the Gasoline Engine Works</h4>
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/uvAxeA7AS-A" frameborder="0" allowfullscreen></iframe>
+              <p class="footnote">
+                *(Please note that although this very old video explains the function of the carburetor, modern vehicles tend to use fuel injection systems. If you are curious about the difference, <a href="http://www.carsdirect.com/used-car-buying/carburetor-vs-fuel-injection-understanding-the-pros-and-cons" target="_blank">check out this article</a>. However, don't worry about this for the purposes of this lesson!)
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <p>We can put this all together with <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> of the <span class="bigidea">four stroke cycle</span>.
+                <img src="img/engine-01.gif" alt="an animated illustration of a cylinder of a car engine cycling through its four strokes" class="img img-responsive">
             </p>
           </div>
+          <div class="row">
+            <h3>Think About It</h3>
+            <p>Why is gasoline so useful as fuel in the internal combustion engine?</p>
+            <br><textarea id="fuelandairQT" rows="4" cols="20"></textarea> 
+            <br><span class="message" id="fuelandairQA"></span>
+            <br><button class="btn btn-primary think" id="fuelandairQ">Submit</button>
+            <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="sparkD">Spark</a>!</p>
+          </div>
+        </div>
 
-          <div class="col-sm-6">
-            <h4>Video: How does car engine oil work?</h4>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/9RSWs44PdkE" frameborder="0" allowfullscreen></iframe>
+    		<!-- SPARK -->
+    		<div id="sparkDiv" class="hidden">
+          <div class="row">
+            <div class="col-sm-6">
+        			<h2>Spark</h2>
+              <p>But how does the engine get going in the first place?</p>
+              <p>
+                In the Fuel and Air section, you read a little bit about the spark plug and electric starter motor on <a href="http://www.hoentaylor.com/blog/?tag=how-an-internal-combustion-engine-works">Taylor Hoen's blog</a>. This part of the lesson showed how gasoline burns best when mixed thoroughly with air. However, it needs a spark of electricity to do it! Watch the video, "Starting a Car - Explained," to understand just how that spark happens when you start your car.
+              </p>
+              <p>
+                For fun, check out a much faster explanation in this rap video <a href="https://www.youtube.com/watch?v=4n3RTI1le3I" target="_blank">here</a>!
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h4>Video: Starting a Car - Explained</h4>
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/sn4yszblY4s" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row">
+            <p>Although the <span class="bigidea">battery</span> gets the car started and runs other systems when the engine isn't running (like your radio), the <span class="bigidea">alternator</span> provides electricity while the engine is running. Read <a href="http://autorepair.about.com/od/glossary/a/howitworks_alternator.htm" target="_blank">this article</a> to learn more about how the alternator and battery work together!</p>
+            <p>Once again, we can check out <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> of the <span class="bigidea">electrical system</span> to see all this in action. <img src="img/electrical.gif" alt="an animation of the electrical system of a car engine" class="img img-responsive">
+              </p>
+          </div>
+          <div class="row">
+            <h3>Think About It</h3>
+            <p>From what you've learned about a car's electrical system, what do you think might be some signs of a faulty alternator?</p>
+            <br><textarea id="sparkQT" rows="4" cols="20"></textarea> 
+            <br><span class="message" id="sparkQA"></span>
+            <br><button class="btn btn-primary think" id="sparkQ">Submit</button>
+            <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="oilD">Oil</a>!</p>
+          </div>
+    		</div>
+
+        <!-- OIL -->
+        <div id="oilDiv" class="hidden">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Oil</h2>
+              <p>
+                If you've ever owned a car, you've had to get an oil change. Some mechanics are courteous enough to leave a sticker on your dashboard to remind you approximately when or at what mileage you should come back to change your oil. Why?
+              </p>
+              <p>
+                Well, did you know that each of the joints in the human body contains a <a href="http://www.healthline.com/health/synovial-fluid-analysis" target="_blank">lubricating fluid</a>? This allows for ease of movement of the body. Engine oil serves a similar purpose.
+              </p>
+              <p>
+                Watch the video "How does car engine oil work?" to learn about what the oil does in the engine.
+              </p>
+            </div>
+
+            <div class="col-sm-6">
+              <h4>Video: How does car engine oil work?</h4>
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/9RSWs44PdkE" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="row">
+              <p>To review this concept, we can use <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> again. Please pay attention to the <span class="bigidea">oil system</span> in the lower half of this image. We already learned about precious air! <img src="img/air-oil.gif" alt="an animation of oil system of a car engine" class="img img-responsive">
+              </p>
+            </div>
           </div>
 
           <div class="row">
-            <p>To review this concept, we can use <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> again. Please pay attention to the <span class="bigidea">oil system</span> in the lower half of this image. We already learned about precious air! <img src="img/air-oil.gif" alt="an animation of oil system of a car engine" class="img img-responsive">
-            </p>
+            <h3>Think About It</h3>
+            <p>What do you think would happen if you never changed your oil?</p>
+            <br><textarea id="oilQT" rows="4" cols="20"></textarea> 
+            <br><span class="message" id="oilQA"></span>
+            <br><button class="btn btn-primary think" id="oilQ">Submit</button>
+            <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="coolingD">Cooling</a>!</p>
           </div>
         </div>
 
-        <div class="row">
-          <h3>Think About It</h3>
-          <p>What do you think would happen if you never changed your oil?</p>
-          <br><textarea id="oilQT" rows="4" cols="20"></textarea> 
-          <br><span class="message" id="oilQA"></span>
-          <br><button class="btn btn-primary think" id="oilQ">Submit</button>
-          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="coolingD">Cooling</a>!</p>
+    		<!-- COOLING -->
+    		<div id="coolingDiv" class="hidden">
+          <div class="row">
+            <div class="col-sm-6">
+      			 <h2>Cooling</h2>
+              <p>So far, you must have gathered that there's a lot of wear and tear generated by the many moving parts of car's engine. We have neglected to mention that the internal combustion engine generates a LOT of heat!</p>
+              <p>
+                Watch the video, "Under the hood: The chemistry of cars" to learn about how the engine prevents overheating.
+              </p>
+              <p>
+                For a more detailed explanation of the cooling system, <a href="http://auto.howstuffworks.com/cooling-system2.htm" target="_blank">check out this article</a>!
+              </p>
+            </div>
+
+            <div class="col-sm-6">
+              <h4>Video: The Chemistry of Cars</h4>
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/e9vfMrjitXw" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="row">
+              <p>As usual, we can examine part of <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> to visualize the <span class="bigidea">cooling system</span>. The bubble that is cut off in the top right of this image depicts the <span class="bigidea">thermometer</span>, which regulates <span class="bigidea">coolant temperature</span> by either routing coolant back through the engine or to the radiator for further cooling. <img src="img/cooling.gif" alt="an animation of the cooling system of a car engine, including radiator, fan, water pump, coolant channels, anti-freeze" class="img img-responsive">
+              </p>
+            </div>
+
+          <div class="row">
+            <h3>Think About It</h3>
+            <p>What would happen if you used pure water as engine coolant?</p>
+            <br><textarea id="coolingQT" rows="4" cols="20"></textarea> 
+            <br><span class="message" id="coolingQA"></span>
+            <br><button class="btn btn-primary think" id="coolingQ">Submit</button>
+            <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="exhaustD">Exhaust</a>!</p>
+          </div>
+    		</div>
+
+    		<!-- EXHAUST -->
+    		<div id="exhaustDiv" class="hidden">
+          <div class="row">
+            <div class="col-sm-6">
+      			 <h2>Exhaust</h2>
+              <p>
+                If cars must inhale air like humans, so must they also exhale. By now, many of us have learned that burning fossil fuels is not ideal for the environment. So what exactly happens when gasoline is burned in the engine? We know that it generates a lot of heat and energy, but is there anything else?
+              </p>
+              <p>
+                Watch the video "How Car Exhaust System Works" to find out more!
+              </p>
+            </div>
+
+            <div class="col-sm-6">
+              <h4>Video: How Car Exhaust System Works</h4>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/W6dIsC_eGBI" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="row">
+            <p>Let's visualize all this with <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a>! </p>
+            <img src="img/exhaust.gif" alt="an animation of the exhaust system of a car, including muffler, catalytic converter, and exhaust manifold" class="img img-responsive">
+          </div>
+
+          <div class="row">
+            <h3>Think About It</h3>
+            <p>Your car runs just fine, but the check engine light came on, and now the mechanic says you need a new catalytic converter. Why is this important to replace?</p>
+            <br><textarea id="exhaustQT" rows="4" cols="20"></textarea> 
+            <br><span class="message" id="exhaustQA"></span>
+            <br><button class="btn btn-primary think" id="exhaustQ">Submit</button>
+            <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="reviewD">Review</a>!</p>
+          </div>
+    		</div>
+
+    		<!-- REVIEW -->
+    		<div id="reviewDiv" class="hidden">
+          <div class="row">
+    			 <h2>Review</h2>
+           <p>Let's review the entire <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Animagraff of the car engine</a> so you can get a better idea of all the systems working together!</p>
+
+           <img src="img/engine-01.gif" alt="an animated illustration of a cylinder of a car engine cycling through its four strokes" class="img img-responsive">
+
+           <img src="img/air-oil.gif" alt="an animation of oil system of a car engine, including oil pump, oil galleries, oil pan, oil filter" class="img img-responsive">
+
+           <img src="img/cooling.gif" alt="an animation of the cooling system of a car engine, including radiator, fan, water pump, coolant channels, anti-freeze" class="img img-responsive">
+
+           <img src="img/electrical.gif" alt="an animation of the electrical system of a car engine, including spark plug, alternator, battery, starter, distributor" class="img img-responsive">
+
+           <img src="img/exhaust.gif" alt="an animation of the exhaust system of a car, including muffler, catalytic converter, and exhaust manifold" class="img img-responsive">
+
+           <img src="img/entire.gif" alt="a simplified illustration of the entire engine" class="img img-responsive">
+
+           <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="stepinsideD">Step Inside</a>!</p>
+          </div>
+    		</div>
+
+        <!-- STEP INSIDE -->
+        <div id="stepinsideDiv" class="hidden">
+          <div class="row">
+           <h2>Step Inside</h2>
+           <img src="img/gasoline.png" alt="a nozzle pouring golden gasoline" class="img img-responsive img-circle pull-left">
+
+           <p>Imagine that you are a molecule of gasoline sitting in a car's gas tank waiting to power the car. Someone turns the ignition key, and it's your turn! Describe your journey. Where do you go? What do you see? What happens to you? What is your final destination?</p>
+           <a class="muut" href="https://muut.com/i/how-cars-work-discussion/comments" type="dynamic">how-cars-work-discussion</a>
+            <script src="//cdn.muut.com/1/moot.min.js"></script>
+          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="quizD">Quiz</a>!</p>
+          </div>
         </div>
+
+    		<!-- QUIZ -->
+    		<div id="quizDiv" class="hidden">
+    			<h2>Quiz</h2>
+          <div class="row" id="quiz">
+          <div class="question">
+            <p>
+              <label name="q1">1. What is the four stroke cycle of an engine's cylinder?</label>
+            </p>
+            <input type="radio" name="q1" value="a" id="q1a"> A: uptake, downtake, reduction, output
+            <br>
+            <input type="radio" name="q1" value="b" id="q1b"> B: intake, compression, power, exhaust
+            <br>
+            <input type="radio" name="q1" value="c" id="q1c"> C: intake, connection, combustion, exhaust
+            <br>
+            <input type="radio" name="q1" value="d" id="q1d" required> D: fuel, air, cooling, exhaust
+            <br>
+            <span class="message" id="m1"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q2">2. What are the components of combustion in the internal combustion engine?</label>
+            </p>
+            <input type="radio" name="q2" value="a" id="q2a"> A: fuel and air
+            <br>
+            <input type="radio" name="q2" value="b" id="q2b"> B: fuel, air, electricity, oil, and coolant
+            <br>
+             <input type="radio" name="q2" value="c" id="q2c"> C: fuel, air, and electricity
+             <br>
+            <input type="radio" name="q2" value="d" id="q2d" required> D: fuel, air, electricity, and oil
+            <br>
+            <span class="message" id="m2"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q3">3. Where does the combustion take place in the engine?</label>
+            </p>
+            <input type="radio" name="q3" value="a" id="q3a"> A: Catalytic converter
+            <br>
+            <input type="radio" name="q3" value="b" id="q3b"> B: Engine block
+            <br>
+            <input type="radio" name="q3" value="c" id="q3c"> C: Cylinder
+             <br>
+            <input type="radio" name="q3" value="d" id="q3d" required> D: Piston
+            <br>
+            <span class="message" id="m3"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q4">4. What are the special properties of engine coolant?</label>
+            </p>
+            <input type="radio" name="q4" value="a" id="q4a"> A: Low freezing point, high boiling point
+            <br>
+            <input type="radio" name="q4" value="b" id="q4b"> B: High freezing point, low boiling point
+            <br>
+            <input type="radio" name="q4" value="c" id="q4c"> C: Low freezing point, low boiling point
+             <br>
+            <input type="radio" name="q4" value="d" id="q4d" required> D: High freezing point, high boiling point
+            <br>
+            <span class="message" id="m4"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q5">5. On the diagram below, which part of the engine carries the power out of the engine, eventually to the wheels?</label>
+            </p>
+            <img src="img/engine-parts-quiz.gif" class="img img-responsive">
+            <input type="radio" name="q5" value="a" id="q5a"> A
+            <br>
+            <input type="radio" name="q5" value="b" id="q5b"> B
+            <br>
+            <input type="radio" name="q5" value="c" id="q5c"> C
+             <br>
+            <input type="radio" name="q5" value="d" id="q5d"> D
+            <br>
+            <input type="radio" name="q5" value="e" id="q5e" required> E
+            <br>
+            <span class="message" id="m5"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q6">6. What is the part described in question 5 called?</label>
+            </p>
+            <input type="radio" name="q6" value="a" id="q6a"> A: crankshaft
+            <br>
+            <input type="radio" name="q6" value="b" id="q6b"> B: piston
+            <br>
+            <input type="radio" name="q6" value="c" id="q6c"> C: spark plug
+             <br>
+            <input type="radio" name="q6" value="d" id="q6d" required> D: camshaft
+            <br>
+            <span class="message" id="m6"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q7">7. On the diagram below, which part is labeled 'A'?</label>
+            </p>
+            <img src="img/engine-parts-quiz.gif" class="img img-responsive">
+            <input type="radio" name="q7" value="a" id="q7a"> A: piston
+            <br>
+            <input type="radio" name="q7" value="b" id="q7b"> B: spark plug
+            <br>
+            <input type="radio" name="q7" value="c" id="q7c"> C: crankshaft
+             <br>
+            <input type="radio" name="q7" value="d" id="q7d" required> D: camshaft
+            <br>
+            <span class="message" id="m7"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q8">8. On the diagram below, which part is labeled 'B'?</label>
+            </p>
+            <img src="img/engine-parts-quiz.gif" class="img img-responsive">
+            <input type="radio" name="q8" value="a" id="q8a"> A: radiator
+            <br>
+            <input type="radio" name="q8" value="b" id="q8b"> B: spark plug
+            <br>
+            <input type="radio" name="q8" value="c" id="q8c"> C: piston
+             <br>
+            <input type="radio" name="q8" value="d" id="q8d" required> D: cylinder
+            <br>
+            <span class="message" id="m8"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q9">9. Which system of the engine is shown on the diagram below?</label>
+            </p>
+            <img src="img/9.gif" class="img img-responsive">
+            <input type="radio" name="q9" value="a" id="q9a"> A: cooling system
+            <br>
+            <input type="radio" name="q9" value="b" id="q9b"> B: fuel system
+            <br>
+            <input type="radio" name="q9" value="c" id="q9c"> C: electrical system
+             <br>
+            <input type="radio" name="q9" value="d" id="q9d" required> D: exhaust system
+            <br>
+            <span class="message" id="m9"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q10">10. On the diagram below, which part is C?</label>
+            </p>
+            <img src="img/9.gif" class="img img-responsive">
+            <input type="radio" name="q10" value="a" id="q10a"> A: muffler
+            <br>
+            <input type="radio" name="q10" value="b" id="q10b"> B: fuel injector
+            <br>
+            <input type="radio" name="q10" value="c" id="q10c"> C: catalytic converter
+             <br>
+            <input type="radio" name="q10" value="d" id="q10d" required> D: cylinder
+            <br>
+            <span class="message" id="m10"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q11">11. What function does part C from question 10 serve?</label>
+            </p>
+            <input type="radio" name="q11" value="a" id="q11a"> A: It helps reduce toxic chemicals in engine exhaust.
+            <br>
+            <input type="radio" name="q11" value="b" id="q11b"> B: It sprays gas into the cylinder.
+            <br>
+            <input type="radio" name="q11" value="c" id="q11c"> C: It closes and opens the engine's valves at the proper times.
+             <br>
+            <input type="radio" name="q11" value="d" id="q11d" required> D: It collects gases from multiple cylinders into one pipe.
+            <br>
+            <span class="message" id="m11"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q12">10. Which is NOT a part of the electrical system?</label>
+            </p>
+            <input type="radio" name="q12" value="a" id="q12a"> A: distributor
+            <br>
+            <input type="radio" name="q12" value="b" id="q12b"> B: alternator
+            <br>
+            <input type="radio" name="q12" value="c" id="q12c"> C: 02 sensor
+             <br>
+            <input type="radio" name="q12" value="d" id="q12d" required> D: starter
+            <br>
+            <span class="message" id="m12"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q13">13. On the diagram below, which part is B?</label>
+            </p>
+            <img src="img/cooling-system-quiz.gif" class="img img-responsive">
+            <input type="radio" name="q13" value="a" id="q13a"> A: thermostat
+            <br>
+            <input type="radio" name="q13" value="b" id="q13b"> B: oil pan
+            <br>
+            <input type="radio" name="q13" value="c" id="q13c"> C: water pump
+             <br>
+            <input type="radio" name="q13" value="d" id="q13d" required> D: radiator
+            <br>
+            <span class="message" id="m13"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q14">14. On the diagram below, what is going on at point F?</label>
+            </p>
+            <img src="img/cooling-system-quiz.gif" class="img img-responsive">
+            <input type="radio" name="q14" value="a" id="q14a"> A: Cooled fluid is returning to the water pump.
+            <br>
+            <input type="radio" name="q14" value="b" id="q14b"> B: The oil filter is removing material from the engine oil.
+            <br>
+            <input type="radio" name="q14" value="c" id="q14c"> C: Cooled fluid is circulating through the engine block.
+             <br>
+            <input type="radio" name="q14" value="d" id="q14d" required> D: Engine oil is circulating through the oil galleries.
+            <br>
+            <span class="message" id="m14"></span>
+          </div>
+
+          <div class="question">
+            <p>
+              <label name="q15">15. Which stroke of the four stroke cycle is depicted in image C below?</label>
+            </p>
+            <div class="col-xs-6 col-sm-3">
+              <img src="img/15A.png" class="img img-responsive">
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <img src="img/15B.png" class="img img-responsive">
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <img src="img/15C.png" class="img img-responsive">
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <img src="img/15D.png" class="img img-responsive">
+            </div>
+
+            <input type="radio" name="q15" value="a" id="q15a"> A: power
+            <br>
+            <input type="radio" name="q15" value="b" id="q15b"> B: intake
+            <br>
+            <input type="radio" name="q15" value="c" id="q15c"> C: downtake
+             <br>
+            <input type="radio" name="q15" value="d" id="q15d" required> D: cooling
+            <br>
+            <span class="message" id="m15"></span>
+          </div>
+
+          <div class="submit">
+            <button id="submit" class="btn btn-primary">Submit</button>
+            <span id="score" class="pull-right"></span>
+          </div>
+        </div>
+
+          <p class="pull-right"><a href="#top">^Top</a> 
+    		</div>
       </div>
-
-  		<!-- COOLING -->
-  		<div id="coolingDiv" class="hidden">
-        <div class="row">
-          <div class="col-sm-6">
-    			 <h2>Cooling</h2>
-            <p>So far, you must have gathered that there's a lot of wear and tear generated by the many moving parts of car's engine. We have neglected to mention that the internal combustion engine generates a LOT of heat!</p>
-            <p>
-              Watch the video, "Under the hood: The chemistry of cars" to learn about how the engine prevents overheating.
-            </p>
-            <p>
-              For a more detailed explanation of the cooling system, <a href="http://auto.howstuffworks.com/cooling-system2.htm" target="_blank">check out this article</a>!
-            </p>
-          </div>
-
-          <div class="col-sm-6">
-            <h4>Video: The Chemistry of Cars</h4>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/e9vfMrjitXw" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="row">
-            <p>As usual, we can examine part of <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a> to visualize the <span class="bigidea">cooling system</span>. The bubble that is cut off in the top right of this image depicts the <span class="bigidea">thermometer</span>, which regulates <span class="bigidea">coolant temperature</span> by either routing coolant back through the engine or to the radiator for further cooling. <img src="img/cooling.gif" alt="an animation of the cooling system of a car engine, including radiator, fan, water pump, coolant channels, anti-freeze" class="img img-responsive">
-            </p>
-          </div>
-
-        <div class="row">
-          <h3>Think About It</h3>
-          <p>What would happen if you used pure water as engine coolant?</p>
-          <br><textarea id="coolingQT" rows="4" cols="20"></textarea> 
-          <br><span class="message" id="coolingQA"></span>
-          <br><button class="btn btn-primary think" id="coolingQ">Submit</button>
-          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="exhaustD">Exhaust</a>!</p>
-        </div>
-  		</div>
-
-  		<!-- EXHAUST -->
-  		<div id="exhaustDiv" class="hidden">
-        <div class="row">
-          <div class="col-sm-6">
-    			 <h2>Exhaust</h2>
-            <p>
-              If cars must inhale air like humans, so must they also exhale. By now, many of us have learned that burning fossil fuels is not ideal for the environment. So what exactly happens when gasoline is burned in the engine? We know that it generates a lot of heat and energy, but is there anything else?
-            </p>
-            <p>
-              Watch the video "How Car Exhaust System Works" to find out more!
-            </p>
-          </div>
-
-          <div class="col-sm-6">
-            <h4>Video: How Car Exhaust System Works</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W6dIsC_eGBI" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="row">
-          <p>Let's visualize all this with <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Jacob O'Neil's animation</a>! </p>
-          <img src="img/exhaust.gif" alt="an animation of the exhaust system of a car, including muffler, catalytic converter, and exhaust manifold" class="img img-responsive">
-        </div>
-
-        <div class="row">
-          <h3>Think About It</h3>
-          <p>Your car runs just fine, but the check engine light came on, and now the mechanic says you need a new catalytic converter. Why is this important to replace?</p>
-          <br><textarea id="exhaustQT" rows="4" cols="20"></textarea> 
-          <br><span class="message" id="exhaustQA"></span>
-          <br><button class="btn btn-primary think" id="exhaustQ">Submit</button>
-          <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="reviewD">Review</a>!</p>
-        </div>
-  		</div>
-
-  		<!-- REVIEW -->
-  		<div id="reviewDiv" class="hidden">
-        <div class="row">
-  			 <h2>Review</h2>
-         <p>Let's review the entire <a href="http://animagraffs.com/how-a-car-engine-works/" target="_blank">Animagraff of the car engine</a> so you can get a better idea of all the systems working together!</p>
-
-         <img src="img/engine-01.gif" alt="an animated illustration of a cylinder of a car engine cycling through its four strokes" class="img img-responsive">
-
-         <img src="img/air-oil.gif" alt="an animation of oil system of a car engine, including oil pump, oil galleries, oil pan, oil filter" class="img img-responsive">
-
-         <img src="img/cooling.gif" alt="an animation of the cooling system of a car engine, including radiator, fan, water pump, coolant channels, anti-freeze" class="img img-responsive">
-
-         <img src="img/electrical.gif" alt="an animation of the electrical system of a car engine, including spark plug, alternator, battery, starter, distributor" class="img img-responsive">
-
-         <img src="img/exhaust.gif" alt="an animation of the exhaust system of a car, including muffler, catalytic converter, and exhaust manifold" class="img img-responsive">
-
-         <img src="img/entire.gif" alt="a simplified illustration of the entire engine" class="img img-responsive">
-
-         <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="stepinsideD">Step Inside</a>!</p>
-        </div>
-  		</div>
-
-      <!-- STEP INSIDE -->
-      <div id="stepinsideDiv" class="hidden">
-        <div class="row">
-         <h2>Step Inside</h2>
-         <img src="img/gasoline.png" alt="a nozzle pouring golden gasoline" class="img img-responsive img-circle pull-left">
-
-         <p>Imagine that you are a molecule of gasoline sitting in a car's gas tank waiting to power the car. Someone turns the ignition key, and it's your turn! Describe your journey. Where do you go? What do you see? What happens to you? What is your final destination?</p>
-         <a class="muut" href="https://muut.com/i/how-cars-work-discussion/comments" type="dynamic">how-cars-work-discussion</a>
-<script src="//cdn.muut.com/1/moot.min.js"></script>
-        <p class="pull-right"><a href="#top">^Top</a> <br> Next: <a href="#" class="article-link" id="quizD">Quiz</a>!</p>
-        </div>
-      </div>
-
-  		<!-- QUIZ -->
-  		<div id="quizDiv" class="hidden">
-  			<h2>Quiz</h2>
-        <div class="row" id="quiz">
-        <div class="question">
-          <p>
-            <label name="q1">1. What is the four stroke cycle of an engine's cylinder?</label>
-          </p>
-          <input type="radio" name="q1" value="a" id="q1a"> A: uptake, downtake, reduction, output
-          <br>
-          <input type="radio" name="q1" value="b" id="q1b"> B: intake, compression, power, exhaust
-          <br>
-          <input type="radio" name="q1" value="c" id="q1c"> C: intake, connection, combustion, exhaust
-          <br>
-          <input type="radio" name="q1" value="d" id="q1d" required> D: fuel, air, cooling, exhaust
-          <br>
-          <span class="message" id="m1"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q2">2. What are the components of combustion in the internal combustion engine?</label>
-          </p>
-          <input type="radio" name="q2" value="a" id="q2a"> A: fuel and air
-          <br>
-          <input type="radio" name="q2" value="b" id="q2b"> B: fuel, air, electricity, oil, and coolant
-          <br>
-           <input type="radio" name="q2" value="c" id="q2c"> C: fuel, air, and electricity
-           <br>
-          <input type="radio" name="q2" value="d" id="q2d" required> D: fuel, air, electricity, and oil
-          <br>
-          <span class="message" id="m2"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q3">3. Where does the combustion take place in the engine?</label>
-          </p>
-          <input type="radio" name="q3" value="a" id="q3a"> A: Catalytic converter
-          <br>
-          <input type="radio" name="q3" value="b" id="q3b"> B: Engine block
-          <br>
-          <input type="radio" name="q3" value="c" id="q3c"> C: Cylinder
-           <br>
-          <input type="radio" name="q3" value="d" id="q3d" required> D: Piston
-          <br>
-          <span class="message" id="m3"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q4">4. What are the special properties of engine coolant?</label>
-          </p>
-          <input type="radio" name="q4" value="a" id="q4a"> A: Low freezing point, high boiling point
-          <br>
-          <input type="radio" name="q4" value="b" id="q4b"> B: High freezing point, low boiling point
-          <br>
-          <input type="radio" name="q4" value="c" id="q4c"> C: Low freezing point, low boiling point
-           <br>
-          <input type="radio" name="q4" value="d" id="q4d" required> D: High freezing point, high boiling point
-          <br>
-          <span class="message" id="m4"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q5">5. On the diagram below, which part of the engine carries the power out of the engine, eventually to the wheels?</label>
-          </p>
-          <img src="img/engine-parts-quiz.gif" class="img img-responsive">
-          <input type="radio" name="q5" value="a" id="q5a"> A
-          <br>
-          <input type="radio" name="q5" value="b" id="q5b"> B
-          <br>
-          <input type="radio" name="q5" value="c" id="q5c"> C
-           <br>
-          <input type="radio" name="q5" value="d" id="q5d"> D
-          <br>
-          <input type="radio" name="q5" value="e" id="q5e" required> E
-          <br>
-          <span class="message" id="m5"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q6">6. What is the part described in question 5 called?</label>
-          </p>
-          <input type="radio" name="q6" value="a" id="q6a"> A: crankshaft
-          <br>
-          <input type="radio" name="q6" value="b" id="q6b"> B: piston
-          <br>
-          <input type="radio" name="q6" value="c" id="q6c"> C: spark plug
-           <br>
-          <input type="radio" name="q6" value="d" id="q6d" required> D: camshaft
-          <br>
-          <span class="message" id="m6"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q7">7. On the diagram below, which part is labeled 'A'?</label>
-          </p>
-          <img src="img/engine-parts-quiz.gif" class="img img-responsive">
-          <input type="radio" name="q7" value="a" id="q7a"> A: piston
-          <br>
-          <input type="radio" name="q7" value="b" id="q7b"> B: spark plug
-          <br>
-          <input type="radio" name="q7" value="c" id="q7c"> C: crankshaft
-           <br>
-          <input type="radio" name="q7" value="d" id="q7d" required> D: camshaft
-          <br>
-          <span class="message" id="m7"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q8">8. On the diagram below, which part is labeled 'B'?</label>
-          </p>
-          <img src="img/engine-parts-quiz.gif" class="img img-responsive">
-          <input type="radio" name="q8" value="a" id="q8a"> A: radiator
-          <br>
-          <input type="radio" name="q8" value="b" id="q8b"> B: spark plug
-          <br>
-          <input type="radio" name="q8" value="c" id="q8c"> C: piston
-           <br>
-          <input type="radio" name="q8" value="d" id="q8d" required> D: cylinder
-          <br>
-          <span class="message" id="m8"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q9">9. Which system of the engine is shown on the diagram below?</label>
-          </p>
-          <img src="img/9.gif" class="img img-responsive">
-          <input type="radio" name="q9" value="a" id="q9a"> A: cooling system
-          <br>
-          <input type="radio" name="q9" value="b" id="q9b"> B: fuel system
-          <br>
-          <input type="radio" name="q9" value="c" id="q9c"> C: electrical system
-           <br>
-          <input type="radio" name="q9" value="d" id="q9d" required> D: exhaust system
-          <br>
-          <span class="message" id="m9"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q10">10. On the diagram below, which part is C?</label>
-          </p>
-          <img src="img/9.gif" class="img img-responsive">
-          <input type="radio" name="q10" value="a" id="q10a"> A: muffler
-          <br>
-          <input type="radio" name="q10" value="b" id="q10b"> B: fuel injector
-          <br>
-          <input type="radio" name="q10" value="c" id="q10c"> C: catalytic converter
-           <br>
-          <input type="radio" name="q10" value="d" id="q10d" required> D: cylinder
-          <br>
-          <span class="message" id="m10"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q11">11. What function does part C from question 10 serve?</label>
-          </p>
-          <input type="radio" name="q11" value="a" id="q11a"> A: It helps reduce toxic chemicals in engine exhaust.
-          <br>
-          <input type="radio" name="q11" value="b" id="q11b"> B: It sprays gas into the cylinder.
-          <br>
-          <input type="radio" name="q11" value="c" id="q11c"> C: It closes and opens the engine's valves at the proper times.
-           <br>
-          <input type="radio" name="q11" value="d" id="q11d" required> D: It collects gases from multiple cylinders into one pipe.
-          <br>
-          <span class="message" id="m11"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q12">10. Which is NOT a part of the electrical system?</label>
-          </p>
-          <input type="radio" name="q12" value="a" id="q12a"> A: distributor
-          <br>
-          <input type="radio" name="q12" value="b" id="q12b"> B: alternator
-          <br>
-          <input type="radio" name="q12" value="c" id="q12c"> C: 02 sensor
-           <br>
-          <input type="radio" name="q12" value="d" id="q12d" required> D: starter
-          <br>
-          <span class="message" id="m12"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q13">13. On the diagram below, which part is B?</label>
-          </p>
-          <img src="img/cooling-system-quiz.gif" class="img img-responsive">
-          <input type="radio" name="q13" value="a" id="q13a"> A: thermostat
-          <br>
-          <input type="radio" name="q13" value="b" id="q13b"> B: oil pan
-          <br>
-          <input type="radio" name="q13" value="c" id="q13c"> C: water pump
-           <br>
-          <input type="radio" name="q13" value="d" id="q13d" required> D: radiator
-          <br>
-          <span class="message" id="m13"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q14">14. On the diagram below, what is going on at point F?</label>
-          </p>
-          <img src="img/cooling-system-quiz.gif" class="img img-responsive">
-          <input type="radio" name="q14" value="a" id="q14a"> A: Cooled fluid is returning to the water pump.
-          <br>
-          <input type="radio" name="q14" value="b" id="q14b"> B: The oil filter is removing material from the engine oil.
-          <br>
-          <input type="radio" name="q14" value="c" id="q14c"> C: Cooled fluid is circulating through the engine block.
-           <br>
-          <input type="radio" name="q14" value="d" id="q14d" required> D: Engine oil is circulating through the oil galleries.
-          <br>
-          <span class="message" id="m14"></span>
-        </div>
-
-        <div class="question">
-          <p>
-            <label name="q15">15. Which stroke of the four stroke cycle is depicted in image C below?</label>
-          </p>
-          <div class="col-xs-3">
-            <img src="img/15A.png" class="img img-responsive">
-          </div>
-          <div class="col-xs-3">
-            <img src="img/15B.png" class="img img-responsive">
-          </div>
-          <div class="col-xs-3">
-            <img src="img/15C.png" class="img img-responsive">
-          </div>
-          <div class="col-xs-3">
-            <img src="img/15D.png" class="img img-responsive">
-          </div>
-
-          <input type="radio" name="q15" value="a" id="q15a"> A: power
-          <br>
-          <input type="radio" name="q15" value="b" id="q15b"> B: intake
-          <br>
-          <input type="radio" name="q15" value="c" id="q15c"> C: downtake
-           <br>
-          <input type="radio" name="q15" value="d" id="q15d" required> D: cooling
-          <br>
-          <span class="message" id="m15"></span>
-        </div>
-
-        <div class="submit">
-          <button id="submit" class="btn btn-primary">Submit</button>
-          <span id="score" class="pull-right"></span>
-        </div>
-      </div>
-
-        <p class="pull-right"><a href="#top">^Top</a> 
-  		</div>
   		
   		<footer>
   			Copyright &copy; Rebecca Doris 2015

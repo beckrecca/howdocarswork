@@ -64,8 +64,11 @@ ul#essential-questions {
 .message {
 	color: #92CDCF;
 }
-.nav-tabs {
-	border-bottom: 1px dotted #445878;
+.navbar-inverse .navbar-nav>li>a {
+	color: #92CDCF;
+}
+.navbar .navbar-inverse .navbar-static-top {
+	background-color: #31353D;
 }
 .question {
 	margin-top: 0.5em;
