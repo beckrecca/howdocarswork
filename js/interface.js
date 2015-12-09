@@ -68,9 +68,8 @@
 
     // Quiz
     $('#submit').click(function (e) {
-        console.log("submit clicked");
         // correct answers
-        var answers = ["b", "c", "c", "a", "e", "a", "b"];
+        var answers = ["b", "c", "c", "a", "e", "a", "b", "d", "d", "c", "a", "c", "d", "c", "a"];
 
         for (var i = 1; i <= answers.length; i++) {
             // obtain answer from radio button
