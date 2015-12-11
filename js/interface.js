@@ -49,19 +49,19 @@
         else {
             // if it's the fuelandair section
             if (buttonId == "fuelandairQ") {
-                $("#" + spanId).html("[correct answer for the fuel and air question]");
+                $("#" + spanId).html("Gasoline is perfect for the internal combustion engine because it burns so rapidly.");
             }
             else if (buttonId == "sparkQ") {
-                $("#" + spanId).html("[correct answer for the spark question]");
+                $("#" + spanId).html("Aside from a dashboard warning light, your alternator might be struggling if the car's electrical system starts failing while the engine is running. The lights might dim, or the power windows might become really slow. There are other signs too, like weird smells and noises!");
             }
             else if (buttonId == "oilQ") {
-                $("#" + spanId).html("[correct answer for the oil question]");
+                $("#" + spanId).html("If you never changed your oil, it would eventually get dirtier and lose its lubricating properties. So, all the friction of the engine would wear the engine down and cause it to fail.");
             }
             else if (buttonId == "coolingQ") {
-                $("#" + spanId).html("[correct answer for the cooling question]");
+                $("#" + spanId).html("If you used pure water as coolant, it would freeze and expand in the winter, damaging your engine. In warmer weather, it would evaporate, and fail to cool the engine, causing it to overheat.");
             }
             else if (buttonId == "exhaustQ") {
-                $("#" + spanId).html("[correct answer for the exhaust question]");
+                $("#" + spanId).html("The catalytic converter is important because it converts toxic pollutants in engine exhaust into less toxic pollutants. It's healthier for you and for the environment!");
             }
         }
     });
@@ -112,5 +112,13 @@
             var score = correct/valid;
             $("#score").html("You scored " + ((score * 100).toFixed(2)) + " percent");
         }
+    });
+
+    // Contrabulous Fabtraption
+    $("#cf").click(function () {
+        $("#cf-image").attr("class", "img img-responsive pull-right visible");
+    });
+    $("#cf-toggle").click(function () {
+        $("#cf-image").attr("class", "img img-responsive pull-right hidden");
     });
 }
